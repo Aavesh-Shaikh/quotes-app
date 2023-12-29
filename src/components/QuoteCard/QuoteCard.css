@@ -1,0 +1,56 @@
+/* QuoteCard.css */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+  height: 300px;
+
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #364a60;
+  /* overflow-y: scroll; */
+}
+
+.quote {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.author {
+  font-size: 14px;
+  text-align: right;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 80%; /* Adjust the width for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .quote {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+
+  .author {
+    font-size: 12px; /* Adjust the font size for smaller screens */
+  }
+}
